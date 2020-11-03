@@ -7,7 +7,8 @@ SOURCES += \
         main.cpp
 
 RESOURCES += qml.qrc \
-    assets.qrc
+    assets.qrc \
+    components.qrc
 
 INCLUDEPATH += source\
     ../cm-lib/source\

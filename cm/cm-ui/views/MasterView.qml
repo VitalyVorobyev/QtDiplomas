@@ -1,6 +1,8 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtQuick.Controls 2.12
+import assets 1.0
+import components 1.0
 
 Window {
     width: 640
@@ -43,17 +45,21 @@ Window {
         color: "#000000"
 
         Column {
-            Button {
-                text: "Dashboard"
-                onClicked: masterController.ui_navigationController.goDashboardView()
+            NavigationButton {
+                iconCharacter: "\uf0c9"
+                description: ""
             }
-            Button {
-                text: "New Client"
-                onClicked: masterController.ui_navigationController.goCreateClientView()
+            NavigationButton {
+                iconCharacter: "\uf015"
+                description: "Dashboard"
             }
-            Button {
-                text: "Find Client"
-                onClicked: masterController.ui_navigationController.goFindClientView()
+            NavigationButton {
+                iconCharacter: "\uf234"
+                description: "New Client"
+            }
+            NavigationButton {
+                iconCharacter: "\uf002"
+                description: "Find Client"
             }
         }
     }
