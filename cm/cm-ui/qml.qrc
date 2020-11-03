@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/views">
+        <file alias="MasterView.qml">MasterView.qml</file>
+        <file>SplashView.qml</file>
+        <file>DashboardView.qml</file>
+        <file>CreateClientView.qml</file>
+        <file>EditClientView.qml</file>
+        <file>FindClientView.qml</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>AnchorsDemo.qml</file>
+    </qresource>
+</RCC>
