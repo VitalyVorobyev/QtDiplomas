@@ -11,15 +11,18 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    client.cpp \
     cm-lib.cpp \
-    source/controllers/master-controller.cpp
+    source/models/client.cpp \
+    source/controllers/master-controller.cpp \
 
 HEADERS += \
-    client.h \
-    cm-lib_global.h \
     cm-lib.h \
-    source/controllers/master-controller.h
+    cm-lib_global.h \
+    source/models/client.h \
+    source/controllers/master-controller.h \
+    source/controllers/navigation-controller.h \
+
+INCLUDEPATH += source
 
 include(../qmake-target-platform.pri)
 include(../qmake-destination-path.pri)

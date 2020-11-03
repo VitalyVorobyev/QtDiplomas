@@ -1,2 +1,6 @@
 shadow-builds
 binaries
+build*
+.qmake.stash
+*.o
+Makefile

@@ -1,5 +1,15 @@
-import QtQuick 2.0
+import QtQuick 2.12
 
 Item {
-
+Column {
+    id: columnWithRectangle
+    Rectangle {
+        anchors.fill: parent
+        color: "#f4c842"
+        Text {
+            anchors.centerIn: parent
+            text: "Edit Client View"
+        }
+    }
+}
 }
