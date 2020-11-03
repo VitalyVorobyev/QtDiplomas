@@ -9,6 +9,7 @@ int main(int argc, char *argv[]) {
     qmlRegisterType<cm::controllers::NavigationController>("CM", 1, 0, "NavigationControlle");
     cm::controllers::MasterController masterController;
     QQmlApplicationEngine engine;
+    engine.addImportPath("qrc:/");
     engine.rootContext()->setContextProperty("masterController", &masterController);
     const QUrl url(QStringLiteral("qrc:/views/MasterView.qml"));
     engine.load(url);
