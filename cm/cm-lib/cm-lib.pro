@@ -12,12 +12,16 @@ CONFIG += c++17
 
 SOURCES += \
     cm-lib.cpp \
+    source/controllers/command-controller.cpp \
+    source/framework/command.cpp \
     source/models/client.cpp \
     source/controllers/master-controller.cpp \
 
 HEADERS += \
     cm-lib.h \
     cm-lib_global.h \
+    source/controllers/command-controller.h \
+    source/framework/command.h \
     source/models/client.h \
     source/controllers/master-controller.h \
     source/controllers/navigation-controller.h \
