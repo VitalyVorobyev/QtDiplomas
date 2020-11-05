@@ -13,6 +13,8 @@ CONFIG += c++17
 SOURCES += \
     cm-lib.cpp \
     source/controllers/command-controller.cpp \
+    source/data/datadecorator.cpp \
+    source/data/stringdecorator.cpp \
     source/framework/command.cpp \
     source/models/client.cpp \
     source/controllers/master-controller.cpp \
@@ -21,6 +23,8 @@ HEADERS += \
     cm-lib.h \
     cm-lib_global.h \
     source/controllers/command-controller.h \
+    source/data/datadecorator.h \
+    source/data/stringdecorator.h \
     source/framework/command.h \
     source/models/client.h \
     source/controllers/master-controller.h \
