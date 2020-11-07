@@ -14,7 +14,7 @@ namespace data {
 
 class Entity;
 
-class CMLIBSHARED_EXPORT DataDecorator : public QObject {
+class CMLIBSHAPED_LIBRARY DataDecorator : public QObject {
     Q_OBJECT
     Q_PROPERTY(QString ui_label READ label CONSTANT)
 
@@ -27,7 +27,7 @@ class CMLIBSHARED_EXPORT DataDecorator : public QObject {
     const QString& label() const;
     Entity* parentEntity();
 
-    virtual QJsonValue QJsonValue() const = 0;
+    virtual QJsonValue jsonValue() const = 0;
     virtual void update(const QJsonObject& jsonObject) = 0;
 
  private:

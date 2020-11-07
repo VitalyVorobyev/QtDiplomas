@@ -14,6 +14,9 @@ SOURCES += \
     cm-lib.cpp \
     source/controllers/command-controller.cpp \
     source/data/datadecorator.cpp \
+    source/data/datetimedecorator.cpp \
+    source/data/enumeratordecorator.cpp \
+    source/data/intdecorator.cpp \
     source/data/stringdecorator.cpp \
     source/framework/command.cpp \
     source/models/client.cpp \
@@ -24,6 +27,9 @@ HEADERS += \
     cm-lib_global.h \
     source/controllers/command-controller.h \
     source/data/datadecorator.h \
+    source/data/datetimedecorator.h \
+    source/data/enumeratordecorator.h \
+    source/data/intdecorator.h \
     source/data/stringdecorator.h \
     source/framework/command.h \
     source/models/client.h \

@@ -1,5 +1,5 @@
-#ifndef STRINGDECORATOR_H
-#define STRINGDECORATOR_H
+#ifndef INTDECORATOR_H
+#define INTDECORATOR_H
 
 #include <QObject>
 #include <QJsonObject>
@@ -13,20 +13,20 @@
 namespace cm {
 namespace data {
 
-class CMLIBSHAPED_LIBRARY StringDecorator : public DataDecorator {
+class CMLIBSHAPED_LIBRARY IntDecorator : public DataDecorator {
     Q_OBJECT
-    Q_PROPERTY(QString ui_value READ value WRITE setValue NOTIFY valueChanged)
+    Q_PROPERTY(int ui_value READ value WRITE setValue NOTIFY valueChanged)
 
  public:
-    StringDecorator(
+    IntDecorator(
             Entity* parentEntity=nullptr,
             const QString& key="SomeItemKey",
             const QString& label="",
-            const QString& value="");
-    ~StringDecorator();
+            const int value=0);
+    ~IntDecorator();
 
-    StringDecorator& setValue(const QString& value);
-    const QString& value() const;
+    IntDecorator& setValue(const int value);
+    int value() const;
 
     QJsonValue jsonValue() const override;
     void update(const QJsonObject& jsonObject) override;
@@ -42,4 +42,4 @@ class CMLIBSHAPED_LIBRARY StringDecorator : public DataDecorator {
 }
 }
 
-#endif // STRINGDECORATOR_H
+#endif // INTDECORATOR_H
