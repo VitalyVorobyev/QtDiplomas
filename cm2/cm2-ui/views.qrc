@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/views">
+        <file>MasterView.qml</file>
+        <file>AddDiplomaView.qml</file>
+        <file>DashboardView.qml</file>
+        <file>EditDiplomaView.qml</file>
+        <file>FindDiplomaView.qml</file>
+        <file>SplashView.qml</file>
+        <file>AnchorsDemo.qml</file>
+    </qresource>
+    <qresource prefix="/assets"/>
+</RCC>
